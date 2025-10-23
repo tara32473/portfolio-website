@@ -1,0 +1,1953 @@
+<!DOCTYPE html><!DOCTYPE html>
+
+<html lang="en"><html lang="en">
+
+<head><head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tara Maynard - Professional Portfolio</title>    <title>Tara Maynard - Computer Programmer Portfolio</title>
+
+    <style>    <style>
+
+        :root {        /* Reset and Base Styles */
+
+            --primary-color: #2c3e50;        * {
+
+            --secondary-color: #3498db;            margin: 0;
+
+            --accent-color: #e74c3c;            padding: 0;
+
+            --text-color: #34495e;            box-sizing: border-box;
+
+            --light-bg: #ecf0f1;        }
+
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);        :root {
+
+        }            --primary-color: #2563eb;
+
+            --primary-light: #3b82f6;
+
+        * {            --primary-dark: #1d4ed8;
+
+            margin: 0;            --secondary-color: #64748b;
+
+            padding: 0;            --accent-color: #f59e0b;
+
+            box-sizing: border-box;            --text-dark: #1e293b;
+
+        }            --text-light: #64748b;
+
+            --background-light: #f8fafc;
+
+        body {            --background-white: #ffffff;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;            --border-color: #e2e8f0;
+
+            line-height: 1.6;            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+            color: var(--text-color);            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+            background-color: #f8f9fa;        }
+
+        }
+
+        html {
+
+        .container {            scroll-behavior: smooth;
+
+            max-width: 1200px;        }
+
+            margin: 0 auto;
+
+            padding: 0 20px;        body {
+
+        }            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+
+            line-height: 1.6;
+
+        /* Header */            color: var(--text-dark);
+
+        header {            background-color: var(--background-white);
+
+            background: var(--gradient);        }
+
+            color: white;
+
+            padding: 1rem 0;        .container {
+
+            position: fixed;            max-width: 1200px;
+
+            width: 100%;            margin: 0 auto;
+
+            top: 0;            padding: 0 20px;
+
+            z-index: 1000;        }
+
+            box-shadow: var(--card-shadow);
+
+        }        /* Navigation */
+
+        .navbar {
+
+        nav {            position: fixed;
+
+            display: flex;            top: 0;
+
+            justify-content: space-between;            width: 100%;
+
+            align-items: center;            background: rgba(255, 255, 255, 0.95);
+
+        }            backdrop-filter: blur(10px);
+
+            z-index: 1000;
+
+        .logo {            padding: 1rem 0;
+
+            font-size: 1.5rem;            box-shadow: var(--shadow);
+
+            font-weight: bold;            transition: all 0.3s ease;
+
+        }        }
+
+
+
+        .nav-links {        .nav-container {
+
+            display: flex;            max-width: 1200px;
+
+            list-style: none;            margin: 0 auto;
+
+            gap: 2rem;            padding: 0 20px;
+
+        }            display: flex;
+
+            justify-content: space-between;
+
+        .nav-links a {            align-items: center;
+
+            color: white;        }
+
+            text-decoration: none;
+
+            transition: opacity 0.3s;        .nav-logo a {
+
+        }            font-size: 1.5rem;
+
+            font-weight: 700;
+
+        .nav-links a:hover {            color: var(--primary-color);
+
+            opacity: 0.8;            text-decoration: none;
+
+        }            transition: color 0.3s ease;
+
+        }
+
+        /* Hero Section */
+
+        .hero {        .nav-logo a:hover {
+
+            background: var(--gradient);            color: var(--primary-dark);
+
+            color: white;        }
+
+            padding: 120px 0 80px;
+
+            text-align: center;        .nav-menu {
+
+        }            display: flex;
+
+            list-style: none;
+
+        .profile-card {            gap: 2rem;
+
+            background: rgba(255,255,255,0.1);        }
+
+            border-radius: 20px;
+
+            padding: 40px;        .nav-link {
+
+            backdrop-filter: blur(10px);            color: var(--text-dark);
+
+            border: 1px solid rgba(255,255,255,0.2);            text-decoration: none;
+
+            max-width: 600px;            font-weight: 500;
+
+            margin: 0 auto;            transition: color 0.3s ease;
+
+        }            position: relative;
+
+        }
+
+        .profile-avatar {
+
+            width: 120px;        .nav-link:hover {
+
+            height: 120px;            color: var(--primary-color);
+
+            margin: 0 auto 20px;        }
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,0.2);        .nav-link::after {
+
+            display: flex;            content: '';
+
+            align-items: center;            position: absolute;
+
+            justify-content: center;            bottom: -5px;
+
+            font-size: 3rem;            left: 0;
+
+            border: 3px solid rgba(255,255,255,0.3);            width: 0;
+
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);            height: 2px;
+
+        }            background: var(--primary-color);
+
+            transition: width 0.3s ease;
+
+        .profile-avatar img {        }
+
+            width: 100%;
+
+            height: 100%;        .nav-link:hover::after {
+
+            border-radius: 50%;            width: 100%;
+
+            object-fit: cover;        }
+
+        }
+
+        /* Mobile menu */
+
+        .profile-avatar-fallback {        .hamburger {
+
+            font-size: 3rem;            display: none;
+
+            color: white;            flex-direction: column;
+
+        }            cursor: pointer;
+
+        }
+
+        .hero h1 {
+
+            font-size: 3rem;        .bar {
+
+            margin-bottom: 1rem;            width: 25px;
+
+            font-weight: 300;            height: 3px;
+
+        }            background: var(--text-dark);
+
+            margin: 3px 0;
+
+        .hero p {            transition: 0.3s;
+
+            font-size: 1.2rem;        }
+
+            margin-bottom: 2rem;
+
+            opacity: 0.9;        /* Hero Section */
+
+        }        .hero {
+
+            min-height: 100vh;
+
+        .cta-button {            display: flex;
+
+            background: var(--accent-color);            align-items: center;
+
+            color: white;            background: linear-gradient(135deg, var(--background-light) 0%, #e2e8f0 100%);
+
+            padding: 12px 30px;            padding-top: 80px;
+
+            border: none;        }
+
+            border-radius: 25px;
+
+            font-size: 1.1rem;        .hero-container {
+
+            cursor: pointer;            display: grid;
+
+            transition: transform 0.3s, box-shadow 0.3s;            grid-template-columns: 2fr 1fr;
+
+            text-decoration: none;            gap: 4rem;
+
+            display: inline-block;            align-items: center;
+
+        }        }
+
+
+
+        .cta-button:hover {        .hero-content h1 {
+
+            transform: translateY(-2px);            font-size: 3.5rem;
+
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);            margin-bottom: 1rem;
+
+        }            color: var(--text-dark);
+
+            font-weight: 700;
+
+        /* Sections */        }
+
+        .section {
+
+            padding: 80px 0;        .highlight {
+
+        }            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+
+            -webkit-background-clip: text;
+
+        .section-title {            -webkit-text-fill-color: transparent;
+
+            text-align: center;            background-clip: text;
+
+            font-size: 2.5rem;        }
+
+            margin-bottom: 3rem;
+
+            color: var(--primary-color);        .hero-subtitle {
+
+        }            font-size: 1.5rem;
+
+            color: var(--text-light);
+
+        /* About Section */            margin-bottom: 2rem;
+
+        .about-content {            font-weight: 400;
+
+            display: grid;        }
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 4rem;        .hero-description {
+
+            align-items: center;            font-size: 1.1rem;
+
+        }            line-height: 1.8;
+
+            margin-bottom: 2.5rem;
+
+        .about-text {            color: var(--text-light);
+
+            font-size: 1.1rem;        }
+
+            line-height: 1.8;
+
+        }        .hero-buttons {
+
+            display: flex;
+
+        .about-stats {            gap: 1rem;
+
+            display: grid;            flex-wrap: wrap;
+
+            grid-template-columns: repeat(2, 1fr);        }
+
+            gap: 2rem;
+
+        }        .btn {
+
+            display: inline-block;
+
+        .stat-item {            padding: 12px 24px;
+
+            text-align: center;            text-decoration: none;
+
+            padding: 2rem;            border-radius: 8px;
+
+            background: white;            font-weight: 500;
+
+            border-radius: 10px;            text-align: center;
+
+            box-shadow: var(--card-shadow);            transition: all 0.3s ease;
+
+        }            cursor: pointer;
+
+            border: none;
+
+        .stat-number {            font-size: 1rem;
+
+            font-size: 2.5rem;        }
+
+            font-weight: bold;
+
+            color: var(--secondary-color);        .btn-primary {
+
+        }            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+
+            color: white;
+
+        /* Projects Section */            box-shadow: var(--shadow);
+
+        .projects-grid {        }
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));        .btn-primary:hover {
+
+            gap: 2rem;            transform: translateY(-2px);
+
+            margin-top: 3rem;            box-shadow: var(--shadow-lg);
+
+        }        }
+
+
+
+        .project-card {        .btn-secondary {
+
+            background: white;            background: transparent;
+
+            border-radius: 15px;            color: var(--primary-color);
+
+            padding: 2rem;            border: 2px solid var(--primary-color);
+
+            box-shadow: var(--card-shadow);        }
+
+            transition: transform 0.3s, box-shadow 0.3s;
+
+        }        .btn-secondary:hover {
+
+            background: var(--primary-color);
+
+        .project-card:hover {            color: white;
+
+            transform: translateY(-5px);            transform: translateY(-2px);
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);        }
+
+        }
+
+        /* Profile Card */
+
+        .project-title {        .profile-card {
+
+            font-size: 1.5rem;            background: white;
+
+            margin-bottom: 1rem;            padding: 2.5rem 2rem;
+
+            color: var(--primary-color);            border-radius: 20px;
+
+        }            box-shadow: var(--shadow-lg);
+
+            text-align: center;
+
+        .project-description {            position: relative;
+
+            margin-bottom: 1.5rem;            border-top: 4px solid var(--primary-color);
+
+            color: #666;        }
+
+        }
+
+        .profile-avatar {
+
+        .project-links {            width: 120px;
+
+            display: flex;            height: 120px;
+
+            gap: 1rem;            border-radius: 50%;
+
+        }            margin: 0 auto 1.5rem;
+
+            overflow: hidden;
+
+        .project-link {            border: 4px solid var(--primary-color);
+
+            background: var(--secondary-color);            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            color: white;        }
+
+            padding: 8px 16px;
+
+            border-radius: 5px;        .profile-avatar img {
+
+            text-decoration: none;            width: 100%;
+
+            font-size: 0.9rem;            height: 100%;
+
+            transition: background 0.3s;            object-fit: cover;
+
+        }            display: block;
+
+        }
+
+        .project-link:hover {
+
+            background: #2980b9;        .profile-avatar-fallback {
+
+        }            width: 100%;
+
+            height: 100%;
+
+        /* Contact Section */            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+
+        .contact {            display: flex;
+
+            background: var(--light-bg);            align-items: center;
+
+        }            justify-content: center;
+
+            font-size: 2.5rem;
+
+        .contact-content {            color: white;
+
+            display: grid;        }
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 4rem;        .profile-card h3 {
+
+        }            margin-bottom: 0.5rem;
+
+            color: var(--text-dark);
+
+        .contact-info {        }
+
+            background: white;
+
+            padding: 2rem;        .profile-card .subtitle {
+
+            border-radius: 15px;            color: var(--primary-color);
+
+            box-shadow: var(--card-shadow);            font-weight: 500;
+
+        }            margin-bottom: 1.5rem;
+
+        }
+
+        .contact-item {
+
+            display: flex;        .contact-info p {
+
+            align-items: center;            display: flex;
+
+            margin-bottom: 1.5rem;            align-items: center;
+
+            gap: 1rem;            justify-content: center;
+
+        }            gap: 0.5rem;
+
+            margin-bottom: 0.5rem;
+
+        .contact-form {            font-size: 0.9rem;
+
+            background: white;            color: var(--text-light);
+
+            padding: 2rem;        }
+
+            border-radius: 15px;
+
+            box-shadow: var(--card-shadow);        /* Section Styles */
+
+        }        section {
+
+            padding: 5rem 0;
+
+        .form-group {        }
+
+            margin-bottom: 1.5rem;
+
+        }        .section-title {
+
+            text-align: center;
+
+        .form-group label {            font-size: 2.5rem;
+
+            display: block;            margin-bottom: 4rem;
+
+            margin-bottom: 0.5rem;            position: relative;
+
+            font-weight: 500;            color: var(--text-dark);
+
+        }        }
+
+
+
+        .form-group input,        .section-title::after {
+
+        .form-group textarea {            content: '';
+
+            width: 100%;            position: absolute;
+
+            padding: 12px;            bottom: -10px;
+
+            border: 1px solid #ddd;            left: 50%;
+
+            border-radius: 5px;            transform: translateX(-50%);
+
+            font-size: 1rem;            width: 60px;
+
+        }            height: 3px;
+
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+
+        .form-group textarea {            border-radius: 3px;
+
+            resize: vertical;        }
+
+            min-height: 120px;
+
+        }        /* About Section */
+
+        .about {
+
+        /* Footer */            background: var(--background-white);
+
+        footer {        }
+
+            background: var(--primary-color);
+
+            color: white;        .about-grid {
+
+            text-align: center;            display: grid;
+
+            padding: 2rem 0;            grid-template-columns: 1fr 1fr;
+
+        }            gap: 4rem;
+
+            align-items: start;
+
+        /* Responsive Design */        }
+
+        @media (max-width: 768px) {
+
+            .nav-links {        .about-text {
+
+                display: none;            font-size: 1.1rem;
+
+            }            line-height: 1.8;
+
+        }
+
+            .hero h1 {
+
+                font-size: 2rem;        .about-text p {
+
+            }            margin-bottom: 1.5rem;
+
+            color: var(--text-light);
+
+            .about-content,        }
+
+            .contact-content {
+
+                grid-template-columns: 1fr;        .skills-grid {
+
+                gap: 2rem;            display: grid;
+
+            }            gap: 1.5rem;
+
+        }
+
+            .about-stats {
+
+                grid-template-columns: 1fr;        .skill-category {
+
+            }            background: var(--background-light);
+
+            padding: 2rem;
+
+            .projects-grid {            border-radius: 12px;
+
+                grid-template-columns: 1fr;            border-left: 4px solid var(--primary-color);
+
+            }            transition: transform 0.3s ease;
+
+        }
+
+            .project-links {
+
+                flex-direction: column;        .skill-category:hover {
+
+            }            transform: translateX(5px);
+
+        }        }
+
+    </style>
+
+</head>        .skill-category h3 {
+
+<body>            color: var(--primary-color);
+
+    <!-- Header -->            margin-bottom: 1rem;
+
+    <header>            font-size: 1.2rem;
+
+        <nav class="container">        }
+
+            <div class="logo">Tara Maynard</div>
+
+            <ul class="nav-links">        .skill-category ul {
+
+                <li><a href="#home">Home</a></li>            list-style: none;
+
+                <li><a href="#about">About</a></li>        }
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>        .skill-category li {
+
+            </ul>            padding: 0.5rem 0;
+
+        </nav>            color: var(--text-light);
+
+    </header>            position: relative;
+
+            padding-left: 1.5rem;
+
+    <!-- Hero Section -->        }
+
+    <section id="home" class="hero">
+
+        <div class="container">        .skill-category li::before {
+
+            <div class="profile-card">            content: '▶';
+
+                <div class="profile-avatar">            position: absolute;
+
+                    <img src="profile-photo.jpg"             left: 0;
+
+                         alt="Tara Maynard"             color: var(--primary-color);
+
+                         onerror="this.parentElement.innerHTML='<div class=\'profile-avatar-fallback\'>👩‍💻</div>'">            font-size: 0.8rem;
+
+                </div>        }
+
+                <h1>Tara Maynard</h1>
+
+                <p>Technology Enthusiast & Problem Solver</p>        /* Education Section */
+
+                <a href="#contact" class="cta-button">Get In Touch</a>        .education {
+
+            </div>            background: var(--background-light);
+
+        </div>        }
+
+    </section>
+
+        .education-grid {
+
+    <!-- About Section -->            display: grid;
+
+    <section id="about" class="section">            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+        <div class="container">            gap: 2rem;
+
+            <h2 class="section-title">About Me</h2>            margin-bottom: 3rem;
+
+            <div class="about-content">        }
+
+                <div class="about-text">
+
+                    <p>I'm a dedicated technology professional with a passion for problem-solving and innovation. Currently pursuing my education at DeVry University, I'm proud to be a recipient of the Women in Technology Scholarship for 2024.</p>        .education-card {
+
+                                background: white;
+
+                    <p>My journey in technology has led me to explore various aspects of web development, project management, and digital solutions. I believe in the power of technology to transform businesses and improve people's lives.</p>            padding: 2rem;
+
+                                border-radius: 12px;
+
+                    <p>When I'm not coding or studying, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the tech community.</p>            box-shadow: var(--shadow);
+
+                </div>            position: relative;
+
+                <div class="about-stats">            border-top: 4px solid var(--primary-color);
+
+                    <div class="stat-item">            transition: transform 0.3s ease;
+
+                        <div class="stat-number">2024</div>        }
+
+                        <div>Scholarship Recipient</div>
+
+                    </div>        .education-card:hover {
+
+                    <div class="stat-item">            transform: translateY(-5px);
+
+                        <div class="stat-number">5+</div>            box-shadow: var(--shadow-lg);
+
+                        <div>Projects Completed</div>        }
+
+                    </div>
+
+                    <div class="stat-item">        .education-card h3 {
+
+                        <div class="stat-number">DeVry</div>            color: var(--text-dark);
+
+                        <div>University Student</div>            margin-bottom: 0.5rem;
+
+                    </div>            font-size: 1.3rem;
+
+                    <div class="stat-item">        }
+
+                        <div class="stat-number">Tech</div>
+
+                        <div>Enthusiast</div>        .institution {
+
+                    </div>            color: var(--primary-color);
+
+                </div>            font-weight: 500;
+
+            </div>            margin-bottom: 1rem;
+
+        </div>        }
+
+    </section>
+
+        .award {
+
+    <!-- Projects Section -->            display: inline-flex;
+
+    <section id="projects" class="section">            align-items: center;
+
+        <div class="container">            gap: 0.5rem;
+
+            <h2 class="section-title">My Projects</h2>            background: linear-gradient(135deg, var(--accent-color) 0%, #fbbf24 100%);
+
+            <div class="projects-grid">            color: white;
+
+                <div class="project-card">            padding: 0.5rem 1rem;
+
+                    <h3 class="project-title">Quiz Application</h3>            border-radius: 20px;
+
+                    <p class="project-description">Interactive quiz application with multiple question types and scoring system.</p>            font-size: 0.9rem;
+
+                    <div class="project-links">            font-weight: 500;
+
+                        <a href="https://github.com/tara32473/quiz-app" class="project-link" target="_blank">View Code</a>        }
+
+                    </div>
+
+                </div>        /* Projects Section */
+
+        .projects {
+
+                <div class="project-card">            background: var(--background-white);
+
+                    <h3 class="project-title">Weather Dashboard</h3>        }
+
+                    <p class="project-description">Real-time weather tracking application with location-based forecasts.</p>
+
+                    <div class="project-links">        .projects-grid {
+
+                        <a href="https://github.com/tara32473/weather-dashboard" class="project-link" target="_blank">View Code</a>            display: grid;
+
+                    </div>            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                </div>            gap: 2rem;
+
+        }
+
+                <div class="project-card">
+
+                    <h3 class="project-title">Budget Manager</h3>        .project-card {
+
+                    <p class="project-description">Personal finance management tool with expense tracking and budget planning.</p>            background: white;
+
+                    <div class="project-links">            padding: 2rem;
+
+                        <a href="https://github.com/tara32473/budget-manager" class="project-link" target="_blank">View Code</a>            border-radius: 16px;
+
+                    </div>            box-shadow: var(--shadow);
+
+                </div>            transition: all 0.3s ease;
+
+            border: 1px solid var(--border-color);
+
+                <div class="project-card">            position: relative;
+
+                    <h3 class="project-title">Task Tracker</h3>        }
+
+                    <p class="project-description">Productivity application for managing tasks and project milestones.</p>
+
+                    <div class="project-links">        .project-card:hover {
+
+                        <a href="https://github.com/tara32473/task-tracker" class="project-link" target="_blank">View Code</a>            transform: translateY(-5px);
+
+                    </div>            box-shadow: var(--shadow-lg);
+
+                </div>        }
+
+
+
+                <div class="project-card">        .project-category {
+
+                    <h3 class="project-title">Cody Maynard Music</h3>            background: var(--primary-color);
+
+                    <p class="project-description">Professional music website showcasing artist portfolio and performances.</p>            color: white;
+
+                    <div class="project-links">            padding: 0.3rem 0.8rem;
+
+                        <a href="https://codymaynardmusic.com" class="project-link" target="_blank">Visit Site</a>            border-radius: 15px;
+
+                    </div>            font-size: 0.8rem;
+
+                </div>            font-weight: 500;
+
+            position: absolute;
+
+                <div class="project-card">            top: 1rem;
+
+                    <h3 class="project-title">Good Newz 4 U</h3>            right: 1rem;
+
+                    <p class="project-description">News and information platform delivering positive stories and updates.</p>        }
+
+                    <div class="project-links">
+
+                        <a href="https://goodnewz4u.com" class="project-link" target="_blank">Visit Site</a>        .project-icon {
+
+                    </div>            width: 60px;
+
+                </div>            height: 60px;
+
+            </div>            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+
+        </div>            border-radius: 12px;
+
+    </section>            display: flex;
+
+            align-items: center;
+
+    <!-- Contact Section -->            justify-content: center;
+
+    <section id="contact" class="section contact">            margin-bottom: 1.5rem;
+
+        <div class="container">            font-size: 1.5rem;
+
+            <h2 class="section-title">Contact Me</h2>            color: white;
+
+            <div class="contact-content">        }
+
+                <div class="contact-info">
+
+                    <h3>Get In Touch</h3>        .project-card h3 {
+
+                    <div class="contact-item">            color: var(--text-dark);
+
+                        <span>📧</span>            margin-bottom: 1rem;
+
+                        <div>            font-size: 1.3rem;
+
+                            <strong>Email:</strong><br>        }
+
+                            <a href="mailto:tara32473@gmail.com">tara32473@gmail.com</a>
+
+                        </div>        .project-card p {
+
+                    </div>            color: var(--text-light);
+
+                    <div class="contact-item">            line-height: 1.6;
+
+                        <span>📱</span>            margin-bottom: 1.5rem;
+
+                        <div>        }
+
+                            <strong>Phone:</strong><br>
+
+                            <a href="tel:585-375-1101">585-375-1101</a>        .project-tech {
+
+                        </div>            display: flex;
+
+                    </div>            flex-wrap: wrap;
+
+                    <div class="contact-item">            gap: 0.5rem;
+
+                        <span>💼</span>        }
+
+                        <div>
+
+                            <strong>LinkedIn:</strong><br>        .tech-tag {
+
+                            <a href="https://www.linkedin.com/in/taramaynard3" target="_blank">linkedin.com/in/taramaynard3</a>            background: var(--background-light);
+
+                        </div>            color: var(--primary-color);
+
+                    </div>            padding: 0.3rem 0.8rem;
+
+                    <div class="contact-item">            border-radius: 15px;
+
+                        <span>🎓</span>            font-size: 0.8rem;
+
+                        <div>            font-weight: 500;
+
+                            <strong>Education:</strong><br>        }
+
+                            DeVry University<br>
+
+                            <small>Women in Technology Scholarship 2024</small>        .project-links {
+
+                        </div>            margin-top: 1rem;
+
+                    </div>            padding-top: 1rem;
+
+                </div>            border-top: 1px solid var(--border-color);
+
+        }
+
+                <div class="contact-form">
+
+                    <h3>Send a Message</h3>        .project-link {
+
+                    <form>            display: inline-flex;
+
+                        <div class="form-group">            align-items: center;
+
+                            <label for="name">Name</label>            gap: 0.5rem;
+
+                            <input type="text" id="name" name="name" required>            color: var(--primary-color);
+
+                        </div>            text-decoration: none;
+
+                        <div class="form-group">            font-weight: 500;
+
+                            <label for="email">Email</label>            font-size: 0.9rem;
+
+                            <input type="email" id="email" name="email" required>            padding: 0.5rem 1rem;
+
+                        </div>            background: var(--background-light);
+
+                        <div class="form-group">            border-radius: 8px;
+
+                            <label for="subject">Subject</label>            transition: all 0.3s ease;
+
+                            <input type="text" id="subject" name="subject" required>            border: 1px solid var(--border-color);
+
+                        </div>        }
+
+                        <div class="form-group">
+
+                            <label for="message">Message</label>        .project-link:hover {
+
+                            <textarea id="message" name="message" required></textarea>            background: var(--primary-color);
+
+                        </div>            color: white;
+
+                        <button type="submit" class="cta-button">Send Message</button>            transform: translateY(-2px);
+
+                    </form>            box-shadow: var(--shadow);
+
+                </div>        }
+
+            </div>
+
+        </div>        /* Competencies Section */
+
+    </section>        .competencies {
+
+            background: var(--background-light);
+
+    <!-- Footer -->        }
+
+    <footer>
+
+        <div class="container">        .competencies-list {
+
+            <p>&copy; 2024 Tara Maynard. All rights reserved.</p>            display: grid;
+
+        </div>            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    </footer>            gap: 1.5rem;
+
+        }
+
+    <script>
+
+        // Smooth scrolling for navigation links        .competency-item {
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {            background: white;
+
+            anchor.addEventListener('click', function (e) {            padding: 1.5rem;
+
+                e.preventDefault();            border-radius: 12px;
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({            box-shadow: var(--shadow);
+
+                    behavior: 'smooth'            display: flex;
+
+                });            align-items: center;
+
+            });            gap: 1rem;
+
+        });            transition: transform 0.3s ease;
+
+        }
+
+        // Form submission handling
+
+        document.querySelector('form').addEventListener('submit', function(e) {        .competency-item:hover {
+
+            e.preventDefault();            transform: translateX(5px);
+
+            alert('Thank you for your message! I\'ll get back to you soon.');        }
+
+            this.reset();
+
+        });        .competency-icon {
+
+    </script>            width: 50px;
+
+</body>            height: 50px;
+
+</html>            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--background-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--background-light);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-item-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-item div h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item div p {
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: var(--background-light);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .education-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card,
+        .education-card,
+        .competency-item {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Tara Maynard</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Hello! I'm <span class="highlight">Tara Maynard</span></h1>
+                    <h2 class="hero-subtitle">Computer Programmer</h2>
+                    <p class="hero-description">
+                        Recent computer science graduate with a passion for programming. 
+                        I have experience in various programming languages and enjoy taking on new challenges. 
+                        My goal is to become a skilled computer programmer and contribute to the technology industry.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="profile-photo.jpg" 
+                             alt="Tara Maynard Profile Photo" 
+                             onerror="this.parentElement.innerHTML='<div class=\'profile-avatar-fallback\'>👩‍💻</div>'">
+                    </div>
+                    <h3>Tara Maynard</h3>
+                    <p class="subtitle">Computer Programmer</p>
+                    <div class="contact-info">
+                        <p>📞 585-375-1101</p>
+                        <p>📧 tara32473@gmail.com</p>
+                        <p>🔗 <a href="https://www.linkedin.com/in/taramaynard3" target="_blank" style="color: var(--primary-color);">LinkedIn Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a recent computer science graduate with a passion for computer programming. 
+                        My educational journey has equipped me with a strong foundation in various programming languages, 
+                        system administration, and network technologies.
+                    </p>
+                    <p>
+                        I have hands-on experience with Linux systems, network configuration, database management, 
+                        and physics simulations. I enjoy solving complex problems and continuously learning new technologies 
+                        to stay current with industry trends.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Development</h3>
+                        <ul>
+                            <li>Object-Oriented Programming</li>
+                            <li>Database Systems & Programming</li>
+                            <li>Web Development</li>
+                            <li>Algorithm Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Systems & Networking</h3>
+                        <ul>
+                            <li>Linux Administration</li>
+                            <li>Shell Scripting</li>
+                            <li>Network Configuration</li>
+                            <li>System Performance Monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>Cloud Computing Fundamentals</li>
+                            <li>Information Systems Security</li>
+                            <li>Data Mining & Analysis</li>
+                            <li>Digital Device Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Associate of Applied Science in Information Systems & Programming</h3>
+                    <p class="institution">DeVry University, Naperville, IL</p>
+                    <div class="award">🏆 Women in Technology Scholarship 2024</div>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Certificate in Programming Essentials</h3>
+                    <p class="institution">DeVry University, Naperville, IL</p>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Associate of Applied Science in Paralegal Studies</h3>
+                    <p class="institution">Olean Business Institute, Olean, NY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Linux Projects -->
+                <div class="project-card">
+                    <div class="project-category">Linux</div>
+                    <div class="project-icon">🐧</div>
+                    <h3>Linux Filesystem Hierarchy</h3>
+                    <p>Explored the Linux filesystem tree and common Linux commands used to manage directories and files.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Shell Commands</span>
+                        <span class="tech-tag">File Management</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_9267aeb8aeab425f88fb94bf9f4dde85.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Linux</div>
+                    <div class="project-icon">💻</div>
+                    <h3>Linux Shell Scripts</h3>
+                    <p>Created and executed Linux shell scripts experimenting with standard input, variables, redirection, and file permissions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Bash Scripting</span>
+                        <span class="tech-tag">Variables</span>
+                        <span class="tech-tag">File Permissions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_13a31642fec249eea2e4dd90f4cec213.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Linux</div>
+                    <div class="project-icon">👥</div>
+                    <h3>User & Group Management</h3>
+                    <p>Managed Linux users and groups, explored host IP configurations, network interfaces, and network utilities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">User Management</span>
+                        <span class="tech-tag">Network Config</span>
+                        <span class="tech-tag">System Admin</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_19acf319dbce4505afb57c3bcc659436.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Linux</div>
+                    <div class="project-icon">📊</div>
+                    <h3>System Performance Monitoring</h3>
+                    <p>Explored Linux utilities that monitor processes, user activities, and network usage for system optimization.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Performance Monitoring</span>
+                        <span class="tech-tag">Process Management</span>
+                        <span class="tech-tag">System Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_7298a6a5e5974126b6a1da64ee31fb31.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <!-- Networking Projects -->
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">🌐</div>
+                    <h3>IPv4 Addressing</h3>
+                    <p>Implemented IPv4 addressing scheme to support a network and assigned IPv4 addresses to SOHO Router virtual machines.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">IPv4</span>
+                        <span class="tech-tag">Network Design</span>
+                        <span class="tech-tag">SOHO Router</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_d5afe63205a44039a8ea47590277dc76.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">🔗</div>
+                    <h3>IP Subnetting & Loopback Interfaces</h3>
+                    <p>Divided Class C network into smaller subnets and configured loopback interfaces to simulate LAN segments.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Subnetting</span>
+                        <span class="tech-tag">Loopback Interfaces</span>
+                        <span class="tech-tag">Network Segmentation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_91d183ee1f934f889ea185493b77bb1d.pdf" target="_blank" class="project-link">📄 View Project Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">🌐</div>
+                    <h3>Network Configuration Testing</h3>
+                    <p>Tested connectivity among computers and SOHO Router, exploring SOHO router functionality including switching, routing, and NAT.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Network Testing</span>
+                        <span class="tech-tag">SOHO Configuration</span>
+                        <span class="tech-tag">Connectivity Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_3eb750e65cdd492ea4fe849b8037407a.pdf" target="_blank" class="project-link">📄 View Network Testing</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">📐</div>
+                    <h3>Visio Network Diagram</h3>
+                    <p>Created network diagrams using Microsoft Visio depicting interconnection of VMs, routers, and network components.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Network Diagramming</span>
+                        <span class="tech-tag">Microsoft Visio</span>
+                        <span class="tech-tag">Network Topology</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_7cade25607fd49c4b36a22a4213e7c7f.pdf" target="_blank" class="project-link">📄 View Network Diagram</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">🔒</div>
+                    <h3>SOHO Wireless Network Security</h3>
+                    <p>Explored router configurations for adding protection to Small Office Home Office wireless networks.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Wireless Security</span>
+                        <span class="tech-tag">SOHO Networks</span>
+                        <span class="tech-tag">Security Protocols</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_7298a6a5e5974126b6a1da64ee31fb31.pdf" target="_blank" class="project-link">📄 View Security Documentation</a>
+                    </div>
+                </div>
+
+                <!-- Physics Projects -->
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">📏</div>
+                    <h3>Units & Linear Motion</h3>
+                    <p>Physics experiments understanding fundamental principles, critical thinking, programming, and data analysis for IoT preparation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Physics Simulation</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Scientific Method</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_2834fd6117a147ebbb44635517f58def.pdf" target="_blank" class="project-link">📄 View Physics Analysis</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">⚡</div>
+                    <h3>Force & Momentum</h3>
+                    <p>Explored energy conservation laws and solved mechanics problems involving force, momentum, and energy transformations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Mechanics</span>
+                        <span class="tech-tag">Energy Conservation</span>
+                        <span class="tech-tag">Problem Solving</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_2834fd6117a147ebbb44635517f58def.pdf" target="_blank" class="project-link">📄 View Mechanics Study</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">🔄</div>
+                    <h3>Circular Motion & Angular Momentum</h3>
+                    <p>Described circular motion, torques, and angular momentum, comparing rotational and linear motion principles.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rotational Motion</span>
+                        <span class="tech-tag">Torque Analysis</span>
+                        <span class="tech-tag">Angular Momentum</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_23407e924e8b46359182b2234a7ab263.pdf" target="_blank" class="project-link">📄 View Rotational Analysis</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">⚡</div>
+                    <h3>Work & Energy</h3>
+                    <p>Analyzed energy conservation principles and their applications in mechanical systems and real-world scenarios.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Energy Analysis</span>
+                        <span class="tech-tag">Work Calculations</span>
+                        <span class="tech-tag">Conservation Laws</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_31748fbf5ecd47209a0a09bd2da2098a.pdf" target="_blank" class="project-link">📄 View Energy Analysis</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">⚡</div>
+                    <h3>Charge & Electric Field</h3>
+                    <p>Explored electric charges, field interactions, and their applications in modern technology and scientific research.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Electric Fields</span>
+                        <span class="tech-tag">Charge Interactions</span>
+                        <span class="tech-tag">Field Theory</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_02d76b58468a423da6bbdafd2c00793e.pdf" target="_blank" class="project-link">📄 View Electric Field Study</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Physics</div>
+                    <div class="project-icon">🧲</div>
+                    <h3>Magnetic Forces & Induction</h3>
+                    <p>Studied magnetism, magnetic field creation, effects on charged particles, and magnetic induction applications in technology.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Electromagnetism</span>
+                        <span class="tech-tag">Magnetic Fields</span>
+                        <span class="tech-tag">Induction</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_802db407a873440d8188f7fe40aa29fc.pdf" target="_blank" class="project-link">📄 View Electromagnetic Study</a>
+                    </div>
+                </div>
+
+                <!-- Web Development Projects -->
+                <div class="project-card">
+                    <div class="project-category">Web Dev</div>
+                    <div class="project-icon">🎵</div>
+                    <h3>Music Website</h3>
+                    <p>Created and designed a professional music website showcasing musical content and services.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Web Design</span>
+                        <span class="tech-tag">Client Project</span>
+                        <span class="tech-tag">Creative Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.codymaynardmusic.com" target="_blank" class="project-link">🔗 View Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Web Dev</div>
+                    <div class="project-icon">📰</div>
+                    <h3>News Website</h3>
+                    <p>Developed a news and information website with content management and user-friendly interface design.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Content Management</span>
+                        <span class="tech-tag">User Interface</span>
+                        <span class="tech-tag">Information Architecture</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.goodnewz4u.com" target="_blank" class="project-link">🔗 View Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Web Dev</div>
+                    <div class="project-icon">👩‍💻</div>
+                    <h3>Original Portfolio Website</h3>
+                    <p>Personal portfolio website showcasing projects, skills, and professional experience built with Wix.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Portfolio Design</span>
+                        <span class="tech-tag">Content Organization</span>
+                        <span class="tech-tag">Professional Presentation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://maynardtara317.wixsite.com/taramaynard" target="_blank" class="project-link">🔗 View Original Site</a>
+                    </div>
+                </div>
+
+                <!-- Comprehensive Final Projects -->
+                <div class="project-card">
+                    <div class="project-category">Linux</div>
+                    <div class="project-icon">🎯</div>
+                    <h3>Linux Systems Final Project</h3>
+                    <p>Comprehensive project covering Linux fundamentals including filesystem navigation, shell scripting, user management, networking, and performance monitoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linux Fundamentals</span>
+                        <span class="tech-tag">System Administration</span>
+                        <span class="tech-tag">Comprehensive Study</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_af76ec69296a40b8aa7d5a27465798a7.pdf" target="_blank" class="project-link">📄 View Final Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-category">Networking</div>
+                    <div class="project-icon">🎯</div>
+                    <h3>Networking Final Deliverable</h3>
+                    <p>Comprehensive networking project demonstrating mastery of IPv4 addressing, subnetting, router configuration, and network security implementation.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Network Mastery</span>
+                        <span class="tech-tag">Complete Implementation</span>
+                        <span class="tech-tag">Professional Deliverable</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://b0dee56b-c948-47c8-946d-ee067d9e5908.filesusr.com/ugd/4afc86_af76ec69296a40b8aa7d5a27465798a7.pdf" target="_blank" class="project-link">📄 View Final Deliverable</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="competencies">
+        <div class="container">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="competencies-list">
+                <div class="competency-item">
+                    <div class="competency-icon">💻</div>
+                    <div>
+                        <h4>Programming & Development</h4>
+                        <p>Code, test, and debug programs efficiently in multiple languages</p>
+                    </div>
+                </div>
+                
+                <div class="competency-item">
+                    <div class="competency-icon">📊</div>
+                    <div>
+                        <h4>Data Analysis & Mining</h4>
+                        <p>Proficiency in data mining, analysis, and interpretation</p>
+                    </div>
+                </div>
+                
+                <div class="competency-item">
+                    <div class="competency-icon">🏗️</div>
+                    <div>
+                        <h4>System Design & Architecture</h4>
+                        <p>Evaluate and design application architecture for multiple technologies</p>
+                    </div>
+                </div>
+                
+                <div class="competency-item">
+                    <div class="competency-icon">🎯</div>
+                    <div>
+                        <h4>Client-Focused Solutions</h4>
+                        <p>Create websites and software based on customer preferences</p>
+                    </div>
+                </div>
+                
+                <div class="competency-item">
+                    <div class="competency-icon">🧩</div>
+                    <div>
+                        <h4>Problem Solving</h4>
+                        <p>Solve technical problems using algorithmic and logical approaches</p>
+                    </div>
+                </div>
+                
+                <div class="competency-item">
+                    <div class="competency-icon">🔄</div>
+                    <div>
+                        <h4>Adaptability & Focus</h4>
+                        <p>Adapt to changes while maintaining focus on priority projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing new opportunities, collaborating on projects, or simply connecting with fellow tech enthusiasts.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>585-375-1101</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:tara32473@gmail.com">tara32473@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Available for remote work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tara Maynard. All rights reserved.</p>
+            <p>Built with passion for technology and innovation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Success message (replace with actual form handling)
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // Mobile menu toggle (for future enhancement)
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        console.log('Tara Maynard Portfolio loaded successfully!');
+    </script>
+</body>
+</html>
