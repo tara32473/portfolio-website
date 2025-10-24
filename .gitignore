@@ -1,0 +1,16 @@
+# System directories
+.codespaces/
+.oryx/
+
+# Individual project repositories (these have their own repos)
+budget-manager/
+
+# IDE and system files
+.vscode/
+.DS_Store
+*.pyc
+__pycache__/
+
+# Temporary files
+*.tmp
+*.log
