@@ -1,0 +1,2 @@
+# Disable Jekyll processing to prevent rendering conflicts
+# This ensures GitHub Pages serves our custom HTML files directly
